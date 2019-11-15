@@ -1,0 +1,23 @@
+{
+    "family": "camel", 
+    "networkMode": "awsvpc",
+    "taskRoleArn": "arn:aws:iam::1234567890123:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::1234567890123:role/ecsTaskExecutionRole",
+    "containerDefinitions": [
+        {
+            "name": "camel-router", 
+            "image": "1234567890123.dkr.ecr.us-east-1.amazonaws.com/camel:latest", 
+            "essential": true, 
+            "command": [
+                "/bin/sh",
+                "-c",
+                "cd /root/router && mvn camel:run"
+            ]
+        }
+    ], 
+    "requiresCompatibilities": [
+        "FARGATE"
+    ], 
+    "cpu": "2048", 
+    "memory": "4096"
+}

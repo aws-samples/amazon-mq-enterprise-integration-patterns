@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order>
+  <client>B</client>
+  <symbol>AMZN</symbol>
+  <country>US</country>
+  <quantity>100</quantity>
+  <price>MKT</price>
+</order>

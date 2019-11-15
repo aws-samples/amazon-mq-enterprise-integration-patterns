@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order>
+  <client>A</client>
+  <symbol>AC</symbol>
+  <country>CA</country>
+  <quantity>100</quantity>
+  <price>MKT</price>
+</order>

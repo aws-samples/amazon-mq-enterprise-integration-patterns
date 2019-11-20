@@ -64,7 +64,6 @@ Add the following lines to ```router/src/main/resources/META-INF/spring/camel-co
 Now run the skeleton project using the following commands. 
 
 ```
-export CAMEL_MASTER_PASSWORD=<Password supplied by host>
 mvn install
 mvn camel:run
 ```

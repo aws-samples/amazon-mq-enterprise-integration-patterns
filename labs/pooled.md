@@ -80,7 +80,6 @@ Our project depends on various java libraries to run. These dependencies are man
 Now run the skeleton project using the following commands. 
 
 ```
-export CAMEL_MASTER_PASSWORD=<Password supplied by host>
 mvn install
 mvn camel:run
 ```

@@ -68,6 +68,7 @@ Each lab and the additional integrations all follow 4 simple steps.
 
 ### Examples (Optional)
 
+* **[Encrypting configuration settings](/labs/encrypt.md)** - Encrypting configuration settings such as passwords, accessKey, secretKeyId etc.
 * **[Connection Pooling](/labs/pooled.md)** - Example of AmazonMQ PooledConnectionFactory 
 * **[Enterprise Integration Patterns](/labs/eip.md)** - Advanced routing lab that demonstrates different EIP patterns.
 * **[AWS/SQS: Integrate AmazonSQS with AmazonMQ](/labs/sqs.md)** - This lab provides details on how to integrate different AWS services with AmazonMQ.

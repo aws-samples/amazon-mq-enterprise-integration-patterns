@@ -7,9 +7,9 @@ This lab implements one possible solution for the use case in the builder sessio
 You should have completed the Labs 1 and 2. Run the following commands to copy the data files to your project.
 
 ```
-cd ~/environment/arc322
-cp -r ~/environment/arc322/data/orders ./router/src/data
-cp -r ~/environment/arc322/data/templates ./router/src/data
+cd ~/environment/amazon-mq-enterprise-integration-patterns
+cp -r ~/environment/amazon-mq-enterprise-integration-patterns/data/orders ./router/src/data
+cp -r ~/environment/amazon-mq-enterprise-integration-patterns/data/templates ./router/src/data
 ```
 
 In ./router/src/data, you would find orders directory and a templates directory. The router project you are building reads data from orders directory.
@@ -19,7 +19,7 @@ Each file in orders directory represents a unique order for a given client. You 
 Run the following commands for each order. Remember to replace N with a number.
 
 ```
-cd ~/environment/arc322/data/templates
+cd ~/environment/amazon-mq-enterprise-integration-patterns/data/templates
 cp orderUS.xml ../orders/orderN.xml
 ```
 

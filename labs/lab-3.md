@@ -5,7 +5,7 @@
 You must have completed Lab-2 successfully. Each lab builds on the previous lab. 
 
 ```
-cd ~/environment/arc322/router
+cd ~/environment/amazon-mq-enterprise-integration-patterns/router
 ```
 
 ## What are we doing?

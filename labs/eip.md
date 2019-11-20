@@ -7,7 +7,7 @@ You must have completed Lab 1 successfully. Each lab builds on the previous lab.
 Switch to the `router` directory in your Cloud 9 IDE.
 
 ```
-cd ~/environment/arc322/router
+cd ~/environment/amazon-mq-enterprise-integration-patterns/router
 ```
 
 ## What are we doing?

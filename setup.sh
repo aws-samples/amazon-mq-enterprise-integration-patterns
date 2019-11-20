@@ -1,5 +1,6 @@
 #!/bin/bash
 masterPassword=${1:-none}
+workshopDir=amazon-mq-enterprise-integration-patterns
 
 cd ~/environment
 
@@ -46,9 +47,9 @@ fi
 echo "Creating and Encrypting properties"
 if [ "$masterPassword" != "none" ]; 
 then
-    encUrl=`~/environment/arc322/crypt.sh encrypt $masterPassword $url`
-    encUser=`~/environment/arc322/crypt.sh encrypt $masterPassword $brokerUser`
-    encPswd=`~/environment/arc322/crypt.sh encrypt $masterPassword $brokerPassword`
+    encUrl=`~/environment/$workshopDir/crypt.sh encrypt $masterPassword $url`
+    encUser=`~/environment/$workshopDir/crypt.sh encrypt $masterPassword $brokerUser`
+    encPswd=`~/environment/$workshopDir/crypt.sh encrypt $masterPassword $brokerPassword`
     encUrl="ENC(${encUrl})"
     encUser="ENC(${encUser})"
     encPswd="ENC(${encPswd})"
@@ -57,6 +58,12 @@ else
     encUser=$brokerUser
     encPswd=$brokerPassword
 fi
-echo "broker.brokerURL=${encUrl}" >> ~/environment/arc322/secrets.properties
-echo "broker.username=${encUser}" >> ~/environment/arc322/secrets.properties
-echo "broker.password=${encPswd}" >> ~/environment/arc322/secrets.properties
+echo "broker.brokerURL=${encUrl}" >> ~/environment/$workshopDir/secrets.properties
+echo "broker.username=${encUser}" >> ~/environment/$workshopDir/secrets.properties
+echo "broker.password=${encPswd}" >> ~/environment/$workshopDir/secrets.properties
+
+mkdir lib; cd lib
+wget https://repo1.maven.org/maven2/org/jasypt/jasypt/1.9.2/jasypt-1.9.2.jar 
+wget https://repo1.maven.org/maven2/org/apache/camel/camel-jasypt/2.24.2/camel-jasypt-2.24.2.jar
+
+cd ~/environment

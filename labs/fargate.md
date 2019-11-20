@@ -17,7 +17,7 @@ aws ecr create-repository --repository-name <repository name>
 
 ## Containerize the application
 
-Add the following lines to a file named Dockerfile in ```~/environment/arc322```.
+Add the following lines to a file named Dockerfile in ```~/environment/amazon-mq-enterprise-integration-patterns```.
 
 ```
 FROM maven:3.6-amazoncorretto-8
@@ -38,7 +38,7 @@ RUN mvn install:install-file -Dfile=/root/lib/tibjms.jar -DgroupId=com.tibco -Da
 Build the container using the following command.
 
 ```
-cd ~/environment/arc322
+cd ~/environment/amazon-mq-enterprise-integration-patterns
 docker build -t <repository name> .
 ```
 

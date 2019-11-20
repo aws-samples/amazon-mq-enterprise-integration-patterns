@@ -16,11 +16,11 @@ Application integration has been a challenge for many architects and developers.
 
 ## Concepts
 
-[Amazon MQ](https://aws.amazon.com/amazon-mq/) is an ActiveMQ-based managed messaging service. For the builder session, you will use Amazon MQ to build your use case. You would need to understand how to login to ActiveMQ console. This [simple tutorial](https://master.d1l1ei0bin3mnd.amplifyapp.com/failover/failover-step-1.html) will help you get started.
+[Amazon MQ](https://aws.amazon.com/amazon-mq/) is an ActiveMQ-based managed messaging service. For the ARC322 builder session, you will use Amazon MQ to build your use case. You would need to understand how to login to ActiveMQ console. This [simple tutorial](https://master.d1l1ei0bin3mnd.amplifyapp.com/failover/failover-step-1.html) will help you get started.
 
-The user-id and password for the ActiveMQ console will be provided to you by the presenter. Once logged in you would need to create the needed queues for implementing your use case.
+The user-id and password for the ActiveMQ console are **workshopUser**. Once logged in you would need to create the needed queues for implementing your use case.
 
-You need the following queues created:
+The following queues were already created for you:
 
 | Queue Name  | Purpose |
 | ------------- | ------------- |
@@ -48,12 +48,11 @@ In the current session, you will be building the Router application. Labs 1 and 
 The steps detailed here are only when you are exploring the labs in your own account. If you are running the labs as part of an event the prerequisites are optional. Please check with your event organizer.
 
 * Go to the AWS console and go to CloudFormation.
-* Create a new stack using the template provided in `cloudformation/arc322.yaml`.
+* Create a new stack using the template provided in `cloudformation/workshop.yaml`.
     * You can give the stack any name you like.
-    * Set the `Lab Configuration` to `user`.
     * Leave other options at default values.
 
-Each lab and the additional integrations all follow simple 4 step process. 
+Each lab and the additional integrations all follow 4 simple steps. 
 
 * Add camel component dependencies.
 * Add a bean to configure the component.
@@ -67,11 +66,11 @@ Each lab and the additional integrations all follow simple 4 step process.
 * **[Lab 3: Implement our sample use case](/labs/lab-3.md)** - First two labs covered the fundamental pieces of knowledge we need. Lets dive in and implement the use case.
 * **[Solution: Fully immplemented sample use case](/labs/solution.md)** - Solution for the use case in the builders session.
 
-### Examples
+### Examples (Optional)
 
-* **[Connection Pooling](/labs/pooled.md)** - Example of ActiveMQ PooledConnectionFactory 
+* **[Connection Pooling](/labs/pooled.md)** - Example of AmazonMQ PooledConnectionFactory 
 * **[Enterprise Integration Patterns](/labs/eip.md)** - Advanced routing lab that demonstrates different EIP patterns.
-* **[AWS/SQS: Integrate different AWS services with AmazonMQ](/labs/sqs.md)** - This lab provides details on how to integrate different AWS services with AmazonMQ.
+* **[AWS/SQS: Integrate AmazonSQS with AmazonMQ](/labs/sqs.md)** - This lab provides details on how to integrate different AWS services with AmazonMQ.
 * **[TIBCO EMS: Integrate TIBCO EMS into Camel project](/labs/tibco.md)** - This optional lab can be run as a standalone for integrating TIBCO EMS with Amazon MQ.
 * **[IBM WebsphereMQ: Integrate IBM MQ into Camel project](/labs/ibmmq.md)** - This optional lab can be run as a standalone for integrating IBM MQ with Amazon MQ.
 * **[ECS/Fargate: Running Camel inegrations at scale using containers](/labs/fargate.md)** - Running camel sping integration containers at scale using Fargate.

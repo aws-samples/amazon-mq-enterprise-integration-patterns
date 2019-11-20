@@ -7,14 +7,12 @@ You will run this lab in the Cloud 9 IDE created for you.  You can find this by 
 Run the following commands in a terminal window in your Cloud 9 IDE to update Java to version 1.8 and install maven and jq.
 
 ```
-cd ~/environment/arc322
+cd ~/environment/amazon-mq-enterprise-integration-patterns
 ./setup.sh 
 source ~/.bashrc
 ```
 
-The setup.sh script takes an optional string as a parameter and encrypts all parameters and creates secrets.properties file in ~/environment/arc322
-
-For example, if you run setup.sh above as follows, the broker parameters are all encrypted using the example master password: password
+>The setup.sh script takes an optional string as a parameter and encrypts all parameters and creates secrets.properties file in ~/environment/amazon-mq-enterprise-integration-patterns. For example, if you run setup.sh above as follows, the broker parameters are all encrypted using the example master password: password. For this session, we will use un-encrypted properties.
 
 ```
 ./setup.sh password
@@ -33,11 +31,11 @@ mvn archetype:generate -DarchetypeGroupId=org.apache.camel.archetypes -Darchetyp
 ```
 Just press enter for two prompts accepting default values.
 
-Copy the secrets.properties file from ~/environment/arc322 to ~/environment/arc322/router/src/main/resources
+Copy the secrets.properties file from ~/environment/amazon-mq-enterprise-integration-patterns to ~/environment/amazon-mq-enterprise-integration-patterns/router/src/main/resources
 
 ```
-cp ~/environment/arc322/secrets.properties ~/environment/arc322/router/src/main/resources
-cp ~/environment/arc322/data/templates/order2trade.xsl ~/environment/arc322/router/src/main/resources 
+cp ~/environment/amazon-mq-enterprise-integration-patterns/secrets.properties ~/environment/amazon-mq-enterprise-integration-patterns/router/src/main/resources
+cp ~/environment/amazon-mq-enterprise-integration-patterns/data/templates/order2trade.xsl ~/environment/amazon-mq-enterprise-integration-patterns/router/src/main/resources 
 ```
 
 Note: If you changed the artifactId in the mvn archetype command, then replace router in the above command with that name.
@@ -83,11 +81,10 @@ Add the following lines to ```router/src/main/resources/META-INF/spring/camel-co
 
 Now run the skeleton project using the following commands. You will be repeating the following two commands for testing our changes.
 
-Setting the CAMEL_MASTER_PASSWORD is optional if you haven't encrypted the properties.
+>Setting the CAMEL_MASTER_PASSWORD is optional if you haven't encrypted the properties. If you did ```export CAMEL_MASTER_PASSWORD=<password>``` before running the following commands.
 
 ```
 cd router
-export CAMEL_MASTER_PASSWORD=<password>
 mvn install
 mvn camel:run
 ```

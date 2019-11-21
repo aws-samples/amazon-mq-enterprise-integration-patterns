@@ -84,4 +84,4 @@ mvn install
 mvn camel:run
 ```
 
-That's it for Lab 1. Now you can start Lab 2.
+That's it for Lab 1. Now you can start [Lab 2](lab-2.md).

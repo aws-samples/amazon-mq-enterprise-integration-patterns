@@ -43,4 +43,4 @@ mvn install
 mvn camel:run
 ```
 
-That's it!!! for Lab 3. Congratulations on completing Lab 3. Now you can start the Lab 4.
+That's it!!! for Lab 3. Congratulations on completing Lab 3. Now you can start implementing the use case. See [fully implemented solution](solution.md) for one way to implement. Not necessarily the only way!! 

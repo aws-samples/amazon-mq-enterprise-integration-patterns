@@ -76,4 +76,4 @@ Each lab and the additional integrations all follow 4 simple steps.
 * **[IBM WebsphereMQ: Integrate IBM MQ into Camel project](/labs/ibmmq.md)** - This optional lab can be run as a standalone for integrating IBM MQ with Amazon MQ.
 * **[ECS/Fargate: Running Camel inegrations at scale using containers](/labs/fargate.md)** - Running camel sping integration containers at scale using Fargate.
 * **[EKS: Running Camel integrations at scale as a k8s service](/labs/k8s.md)** - Running camel spring integration containers at scale using Kubernetes.
-* **[Tips, Tricks and Gotchas](/labs/tips.md)** - Sharing Apache Camel Tips, Tricks and Gotchas.
+* **[JMX Integration](/labs/jmx.md)** - Enabling JMX for your project and viewing metrics.

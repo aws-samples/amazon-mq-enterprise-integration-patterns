@@ -1,4 +1,4 @@
-# Tips, Tricks and Gotchas
+# JMX Integration
 
 ## Performance Metrics
 
@@ -79,4 +79,10 @@ In order to run the Camel app with hawtio embedded, run the following commands.
 ```
 mvn install
 mvn io.hawt:hawtio-maven-plugin:2.8.0:camel
+```
+
+Once the application successfully runs, open a browser and navigate to the host:port to see the Hawtio GUI view.
+
+```
+<hostname/ip/domain>:8292
 ```

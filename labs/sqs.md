@@ -42,7 +42,7 @@ We will integrate SQS with AmazonMQ using Apache Camel.
   </bean> 
 ```
 
-Add the following to ~/environment/router/main/resources/secrets.properties. Remember to encrypt the acces.key and secret.key using encrypt.sh script.
+Add the following to ```~/environment/router/main/resources/secrets.properties```. Remember to encrypt the acces.key and secret.key using ```crypt.sh``` script.
 
 The encrypted properties added to properties file using ENC(encrypted text) and they are automatically decrypted when the project is run by exporting encryption key using the CAMEL_MASTER_PASSWORD environment variable.
 

@@ -1,4 +1,4 @@
-# Lab 3: Use Case
+# Lab 3: Implement a sample route
 
 ## Prerequisites
 

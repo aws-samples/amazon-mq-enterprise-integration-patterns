@@ -66,7 +66,7 @@ Each lab and the additional integrations all follow 4 simple steps.
 * **[Lab 3: Implement an example route](/labs/lab-3.md)** - In this lab you will add a simple route that helps you to set the stage for sample use case.
 * **[Solution: Fully immplemented sample use case](/labs/solution.md)** - Solution for the use case in the builders session.
 
-### Examples (Optional)
+### Examples 
 
 * **[Encrypting configuration settings](/labs/encrypt.md)** - Encrypting configuration settings such as passwords, accessKey, secretKeyId etc.
 * **[Connection Pooling](/labs/pooled.md)** - Example of AmazonMQ PooledConnectionFactory 

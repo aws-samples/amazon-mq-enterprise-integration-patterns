@@ -61,9 +61,9 @@ Each lab and the additional integrations all follow 4 simple steps.
 
 ### Labs
 
-* **[Lab 1: Create and run a skeleton Apache Camel java project](/labs/lab-1.md)** - In this Lab we will explore how to start a new Camel Java project and run it. 
-* **[Lab 2: Integrate Broker endpoints and test](/labs/lab-2.md)** - In this Lab we will explore how to add broker endpoints, send/receive messages to get familiar with Spring DSL.
-* **[Lab 3: Implement our sample use case](/labs/lab-3.md)** - First two labs covered the fundamental pieces of knowledge we need. Lets dive in and implement the use case.
+* **[Lab 1: Create and run a skeleton Apache Camel java project](/labs/lab-1.md)** - In this Lab you will explore how to start a new Camel Java project and run it. 
+* **[Lab 2: Integrate Broker endpoints and test](/labs/lab-2.md)** - In this Lab you will explore how to add broker endpoints, send/receive messages to get familiar with Spring DSL.
+* **[Lab 3: Implement an example route](/labs/lab-3.md)** - In this lab you will add a simple route that helps you to set the stage for sample use case.
 * **[Solution: Fully immplemented sample use case](/labs/solution.md)** - Solution for the use case in the builders session.
 
 ### Examples (Optional)

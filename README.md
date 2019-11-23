@@ -70,10 +70,11 @@ Each lab and the additional integrations all follow 4 simple steps.
 
 * **[Encrypting configuration settings](/labs/encrypt.md)** - Encrypting configuration settings such as passwords, accessKey, secretKeyId etc.
 * **[Connection Pooling](/labs/pooled.md)** - Example of AmazonMQ PooledConnectionFactory 
-* **[Enterprise Integration Patterns](/labs/eip.md)** - Advanced routing lab that demonstrates different EIP patterns.
 * **[AWS/SQS: Integrate AmazonSQS with AmazonMQ](/labs/sqs.md)** - This lab provides details on how to integrate different AWS services with AmazonMQ.
 * **[TIBCO EMS: Integrate TIBCO EMS into Camel project](/labs/tibco.md)** - This optional lab can be run as a standalone for integrating TIBCO EMS with Amazon MQ.
 * **[IBM WebsphereMQ: Integrate IBM MQ into Camel project](/labs/ibmmq.md)** - This optional lab can be run as a standalone for integrating IBM MQ with Amazon MQ.
 * **[ECS/Fargate: Running Camel inegrations at scale using containers](/labs/fargate.md)** - Running camel sping integration containers at scale using Fargate.
-* **[EKS: Running Camel integrations at scale as a k8s service](/labs/k8s.md)** - Running camel spring integration containers at scale using Kubernetes.
 * **[JMX Integration](/labs/jmx.md)** - Enabling JMX for your project and viewing metrics.
+
+
+

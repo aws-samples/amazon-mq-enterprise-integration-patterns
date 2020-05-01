@@ -28,9 +28,9 @@ if [[ "$mvn_version" =~ .*3\.6.* ]]; then
     echo "Maven is up to date"
 else 
     echo "Updating maven to 3.6"
-    wget http://mirror.cc.columbia.edu/pub/software/apache/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz > /dev/null 2>&1
-    tar zxvf apache-maven-3.6.1-bin.tar.gz > /dev/null 2>&1
-    echo "export PATH=~/environment/apache-maven-3.6.1/bin:$PATH" >> ~/.bashrc
+    wget http://mirror.cc.columbia.edu/pub/software/apache/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz > /dev/null 2>&1
+    tar zxvf apache-maven-3.6.3-bin.tar.gz > /dev/null 2>&1
+    echo "export PATH=~/environment/apache-maven-3.6.3/bin:$PATH" >> ~/.bashrc
 fi
 echo "Getting broker urls..."
 brokerId=`aws mq list-brokers | jq '.BrokerSummaries[] | select(.BrokerName=="Broker") | {id:.BrokerId}' | grep "id" | cut -d '"' -f4`

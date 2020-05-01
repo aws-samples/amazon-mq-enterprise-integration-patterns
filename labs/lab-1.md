@@ -38,7 +38,7 @@ cp ~/environment/amazon-mq-enterprise-integration-patterns/data/templates/order2
 
 ## Add dependencies
 
-Our project depends on various java libraries to run. These dependencies are managed by Maven. Add the following lines to ```pom.xml`` file in the ```<dependencies>``` block.
+Our project depends on various java libraries to run. These dependencies are managed by Maven. Add the following lines to ```pom.xml``` file in the ```<dependencies>``` block.
 
 ```
     <dependency>
